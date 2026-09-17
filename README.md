@@ -1,37 +1,107 @@
-DriveEase Vehicle Rental Management System README
-Overview
-DriveEase is a Java-based vehicle rental management system built on core OOP concepts. This application enables rental staff members to monitor and control company's rental processes effectively while also managing a vehicle fleet efficiently.
-The program includes the following functionalities: l
-Adding and deleting various types of vehicles including cars, bikes, and SUVs l
-Registering customers l
-Viewing available vehicles l
-Booking rental seats l
-Returning rented vehicles l
-Calculating rental costs and late fees l
-Generating invoices l
-Storing data in an SQLite database l
-Validating input data l
-Testing the code using unit testing framework
-Technologies
-l Java 17 l Maven l SQLite l JDBC l JUnit 5 l Git and GitHub
-OOP Concepts
-l Encapsulation l Inheritance l Polymorphism
-l Abstraction l Interface and service-based design l Composition l Exception handling
-Requirements
-l Java JDK 17 or higher l Maven 3.8 or higher l Git
-How to Run
-Clone the repository:
-git clone https://github.com/YOUR_USERNAME/driveease.git cd driveease
-Compile the project:
+# DriveEase — Vehicle Rental Management System
+
+So here's the deal: DriveEase is a Java app I built to help rental staff actually manage a fleet of vehicles without losing their minds. Think cars, bikes, SUVs — the whole lineup — plus customers, bookings, returns, and all the billing headaches that come with running a rental business. It's built around solid OOP principles, so under the hood it's clean and easy to extend.
+
+## What it actually does
+
+Here's what you can do with it:
+
+- Add or remove vehicles — cars, bikes, SUVs, you name it
+- Register new customers
+- Check what's available to rent right now
+- Book a vehicle for someone
+- Handle returns
+- Work out rental costs and slap on late fees when needed
+- Spit out invoices
+- Keep everything saved in a SQLite database
+- Validate whatever data gets typed in, so garbage doesn't sneak through
+- Run unit tests to make sure nothing's secretly broken
+
+## Built with
+
+- Java 17
+- Maven
+- SQLite
+- JDBC
+- JUnit 5
+- Git and GitHub
+
+## The OOP stuff going on under the hood
+
+If you're curious about the design side of things, this project leans on:
+
+- Encapsulation
+- Inheritance
+- Polymorphism
+- Abstraction
+- Interfaces and a service-based design
+- Composition
+- Proper exception handling
+
+## Before you start
+
+You'll need:
+
+- Java JDK 17 or newer
+- Maven 3.8 or newer
+- Git
+
+## Getting it running
+
+First, grab the code:
+
+```bash
+git clone https://github.com/YOUR_USERNAME/driveease.git
+cd driveease
+```
+
+Then compile it:
+
+```bash
 mvn clean compile
-Run the application:
-mvn exec:java The SQLite database file driveease.db will be generated automatically.
-Run Tests
+```
+
+And fire it up:
+
+```bash
+mvn exec:java
+```
+
+Don't worry about the database — a `driveease.db` file gets created automatically the first time you run things.
+
+## Running the tests
+
+Want to make sure everything's working? Just run:
+
+```bash
 mvn test
-Database
-The application uses SQLite as a database engine. The necessary tables will be created automatically on the first launch of the application.
-Project Modules
-l Vehicle Management l Customer Management l Rental Management l Billing and Invoice Management l Reporting and Rental Tracking
-Future Enhancements
-l JavaFX graphical interface l Admin authentication l Online payment integration l Email notifications l Advanced revenue reports l Vehicle maintenance scheduling
-Source: github.com/tanay25bai10098-spec/driveease
+```
+
+## About the database
+
+It's SQLite, nice and lightweight. You don't need to set up any tables yourself — the app takes care of that the first time it launches.
+
+## How the project's organized
+
+The whole thing is split into a few logical chunks:
+
+- Vehicle Management
+- Customer Management
+- Rental Management
+- Billing and Invoice Management
+- Reporting and Rental Tracking
+
+## What's next
+
+There's a bunch of stuff I'd like to add down the road:
+
+- A proper JavaFX interface instead of just the command line
+- Admin login/authentication
+- Online payment support
+- Email notifications
+- Better, more detailed revenue reports
+- Scheduling for vehicle maintenance
+
+---
+
+Source: [github.com/tanay25bai10098-spec/driveease](https://github.com/tanay25bai10098-spec/driveease)
